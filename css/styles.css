@@ -10,6 +10,27 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/*******************************************************************************
+
+    uBlock Origin - a browser extension to block requests.
+    Copyright (C) 2019-present Jehison Martinez
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see {http://www.gnu.org/licenses/}.
+
+/*******************************************************************************
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -69,6 +90,65 @@
 *::after {
   box-sizing: border-box;
 }
+
+
+
+
+
+
+.en{
+  color: #fff;
+}
+
+.fr{
+  color: #fff;
+}
+
+.check{
+  position: relative;
+  width: 50px;
+}
+
+.check:before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #F4EC71;
+  border-radius: 25px;
+}
+
+.check:after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+
+}
+
+.check:checked:after{
+  left: 25px;
+  border: 2px solid #2e4755;
+}
+
+.check:checked:before{
+  background: #978a8a;
+}
+
+
+.selected-lang {
+  cursor: pointer; 
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  width: 100px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -4508,7 +4588,7 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #00ffc8;
+  color: #F4EC71;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);

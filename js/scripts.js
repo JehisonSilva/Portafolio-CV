@@ -7,6 +7,22 @@
 // Scripts
 // 
 
+
+
+
+
+var check=document.querySelector(".check");
+check.addEventListener('click' ,langue);
+
+function langue(){
+    let id=check.checked;
+    if (id==true){
+        location.href="en/index.html";
+    }else{
+        location.href="../index.html";
+    }
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     const sideNav = document.body.querySelector('#sideNav');

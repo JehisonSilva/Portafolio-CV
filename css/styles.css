@@ -183,6 +183,12 @@ h1, .h1 {
   font-size: calc(1.725rem + 5.7vw);
   font-family: 'Poppins', sans-serif;
 }
+
+.titulo-nombre {
+  line-height: 80px;
+}
+  
+
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 6rem;
@@ -204,6 +210,16 @@ h3, .h3 {
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 2rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 614px) {
+  .text-gifs {
+    width: 100% !important;
+    
+
   }
 }
 

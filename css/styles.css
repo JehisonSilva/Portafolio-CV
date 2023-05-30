@@ -187,7 +187,10 @@ h1, .h1 {
 .titulo-nombre {
   line-height: 80px;
 }
-  
+
+.text-date {
+  line-height: 50px;
+}
 
 @media (min-width: 1200px) {
   h1, .h1 {
